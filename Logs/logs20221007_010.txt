@@ -1,0 +1,111 @@
+2022-10-07 13:22:55.855 +07:00 [INF] User profile is available. Using 'C:\Users\MSI_NB\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-07 13:22:56.215 +07:00 [INF] Now listening on: https://localhost:7274
+2022-10-07 13:22:56.216 +07:00 [INF] Now listening on: http://localhost:5151
+2022-10-07 13:22:56.224 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-07 13:22:56.224 +07:00 [INF] Hosting environment: Development
+2022-10-07 13:22:56.225 +07:00 [INF] Content root path: C:\laragon\www\gisAPI\
+2022-10-07 13:22:57.713 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - -
+2022-10-07 13:22:58.073 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - - - 200 - text/html;charset=utf-8 368.9781ms
+2022-10-07 13:22:58.101 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - -
+2022-10-07 13:22:58.106 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 4.7215ms
+2022-10-07 13:22:58.515 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - -
+2022-10-07 13:22:58.916 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 401.0367ms
+2022-10-07 13:23:05.877 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7274/api/Auth/admin/login application/json 50
+2022-10-07 13:23:05.889 +07:00 [INF] CORS policy execution successful.
+2022-10-07 13:23:05.923 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: String reference not set to an instance of a String. (Parameter 's')
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__3(JwtBearerOptions opt) in C:\laragon\www\gisAPI\Program.cs:line 67
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-07 13:23:05.982 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7274/api/Auth/admin/login application/json 50 - 500 - text/plain;+charset=utf-8 104.5216ms
+2022-10-07 13:23:13.289 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7274/api/Auth/admin/register application/json 70
+2022-10-07 13:23:13.291 +07:00 [INF] CORS policy execution successful.
+2022-10-07 13:23:13.293 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: String reference not set to an instance of a String. (Parameter 's')
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__3(JwtBearerOptions opt) in C:\laragon\www\gisAPI\Program.cs:line 67
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-07 13:23:13.299 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7274/api/Auth/admin/register application/json 70 - 500 - text/plain;+charset=utf-8 10.0516ms
+2022-10-07 13:23:36.553 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - -
+2022-10-07 13:23:36.555 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - - - 200 - text/html;charset=utf-8 2.1358ms
+2022-10-07 13:23:36.588 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - -
+2022-10-07 13:23:36.589 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.8601ms
+2022-10-07 13:23:36.842 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - -
+2022-10-07 13:23:36.847 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.9674ms
+2022-10-07 13:23:41.187 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7274/api/Auth/admin/register application/json 70
+2022-10-07 13:23:41.188 +07:00 [INF] CORS policy execution successful.
+2022-10-07 13:23:41.196 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: String reference not set to an instance of a String. (Parameter 's')
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__3(JwtBearerOptions opt) in C:\laragon\www\gisAPI\Program.cs:line 67
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-07 13:23:41.207 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7274/api/Auth/admin/register application/json 70 - 500 - text/plain;+charset=utf-8 19.6316ms
+2022-10-07 13:24:21.551 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7274/api/Auth/admin/register application/json 70
+2022-10-07 13:24:21.551 +07:00 [INF] CORS policy execution successful.
+2022-10-07 13:24:21.552 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: String reference not set to an instance of a String. (Parameter 's')
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__3(JwtBearerOptions opt) in C:\laragon\www\gisAPI\Program.cs:line 67
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-07 13:24:21.557 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7274/api/Auth/admin/register application/json 70 - 500 - text/plain;+charset=utf-8 6.4830ms
+2022-10-07 13:24:32.113 +07:00 [INF] Starting up

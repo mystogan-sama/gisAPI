@@ -1,0 +1,35 @@
+2022-10-07 13:14:39.005 +07:00 [INF] Now listening on: https://localhost:7274
+2022-10-07 13:14:39.026 +07:00 [INF] Now listening on: http://localhost:5151
+2022-10-07 13:14:39.036 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-07 13:14:39.037 +07:00 [INF] Hosting environment: Development
+2022-10-07 13:14:39.037 +07:00 [INF] Content root path: C:\laragon\www\gisAPI\
+2022-10-07 13:14:40.398 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - -
+2022-10-07 13:14:40.727 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - - - 200 - text/html;charset=utf-8 336.6639ms
+2022-10-07 13:14:40.763 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - -
+2022-10-07 13:14:40.768 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 4.6763ms
+2022-10-07 13:14:41.130 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - -
+2022-10-07 13:14:41.440 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - gisAPI.Controllers.AuthController.Login (gisAPI). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate schema for type - gisAPI.Auth.Login+Command. See inner exception
+ ---> System.InvalidOperationException: Can't use schemaId "$Command" for type "$gisAPI.Auth.Login+Command". The same schemaId is already used for type "$gisAPI.Auth.Register+Command"
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRepository.RegisterType(Type type, String schemaId)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateReferencedSchema(DataContract dataContract, SchemaRepository schemaRepository, Func`1 definitionFactory)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateConcreteSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchemaForParameter(Type modelType, SchemaRepository schemaRepository, ParameterInfo parameterInfo, ApiParameterRouteInfo routeInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchema(Type modelType, SchemaRepository schemaRepository, MemberInfo memberInfo, ParameterInfo parameterInfo, ApiParameterRouteInfo routeInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchema(Type type, SchemaRepository schemaRepository, PropertyInfo propertyInfo, ParameterInfo parameterInfo, ApiParameterRouteInfo routeInfo)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchema(Type type, SchemaRepository schemaRepository, PropertyInfo propertyInfo, ParameterInfo parameterInfo, ApiParameterRouteInfo routeInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateRequestBodyFromBodyParameter(ApiDescription apiDescription, SchemaRepository schemaRepository, ApiParameterDescription bodyParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateRequestBody(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-07 13:14:41.481 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 350.2392ms
+2022-10-07 13:20:54.354 +07:00 [INF] Starting up

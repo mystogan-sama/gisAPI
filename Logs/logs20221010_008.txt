@@ -1,0 +1,14 @@
+2022-10-10 10:54:53.265 +07:00 [INF] User profile is available. Using 'C:\Users\MSI_NB\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-10 10:54:53.600 +07:00 [INF] Now listening on: https://localhost:7274
+2022-10-10 10:54:53.600 +07:00 [INF] Now listening on: http://localhost:5151
+2022-10-10 10:54:53.609 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-10 10:54:53.610 +07:00 [INF] Hosting environment: Development
+2022-10-10 10:54:53.610 +07:00 [INF] Content root path: C:\laragon\www\gisAPI\
+2022-10-10 10:54:53.828 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - -
+2022-10-10 10:54:54.151 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - - - 200 - text/html;charset=utf-8 329.8104ms
+2022-10-10 10:54:54.173 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - -
+2022-10-10 10:54:54.178 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 5.2824ms
+2022-10-10 10:54:54.188 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - -
+2022-10-10 10:54:54.188 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.5720ms
+2022-10-10 10:54:54.512 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - -
+2022-10-10 10:55:00.689 +07:00 [INF] Starting up
