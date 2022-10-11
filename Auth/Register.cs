@@ -58,7 +58,7 @@ namespace gisAPI.Auth
                 model.PwdHash = hash;
                 model.PwdSalt = salt;
                 model.DateCreate = DateTime.Now;
-                model.Role = "admin";
+                model.Role = "Admin";
 
                 Console.WriteLine(JsonConvert.SerializeObject(model).ToString());
 
