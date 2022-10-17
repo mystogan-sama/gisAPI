@@ -16,25 +16,26 @@ namespace gisAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<KibRepository>>> GetAllKibs()
+        // public async Task<ActionResult<List<KibRepository>>> GetAllKibs()
+        // {
+        //     using var connection = new SqlConnection(_config.GetConnectionString("Default"));
+        //     IEnumerable<KibRepository> kibs = await SelectAllKib(connection);
+        //     return Ok(kibs);
+        // }
+
+        // private static async Task<IEnumerable<KibRepository>> SelectAllKib(SqlConnection connection)
+        // {
+        //     return await connection.QueryAsync<KibRepository>("select * from ASET_KIB");
+        // }
+
+        // [HttpGet("{KDKIB}{UNITKEY}{ASETKEY}")]
+        public async Task<ActionResult<KibRepository>> GetKibs(string KDKIB,string UNITKEY, string ASETKEY)
         {
             using var connection = new SqlConnection(_config.GetConnectionString("Default"));
-            IEnumerable<KibRepository> kibs = await SelectAllKib(connection);
-            return Ok(kibs);
-        }
 
-        private static async Task<IEnumerable<KibRepository>> SelectAllKib(SqlConnection connection)
-        {
-            return await connection.QueryAsync<KibRepository>("select * from ASET_KIB");
-        }
+                var kibDLok = await connection.QueryAsync<KibRepository>("select b.NMASET,  b.NMASET +' - '+ a.IDBRG as IDBRG from ASET_KIB a join DAFTASET b on a.ASETKEY=b.ASETKEY join DAFTUNIT c on a.UNITKEY=c.UNITKEY join JNSKIB d on a.KDKIB=d.KDKIB where b.ASETKEY LIKE '"+ASETKEY+"%'and c.UNITKEY LIKE '"+UNITKEY+"%' and d.KDKIB LIKE '"+KDKIB+"%'");
+                    return Ok(kibDLok);
 
-        [HttpGet("{asetKey}")]
-        public async Task<ActionResult<KibRepository>> GetKdKib(string asetKey)
-        {
-            using var connection = new SqlConnection(_config.GetConnectionString("Default"));
-            var kib = await connection.QueryAsync<KibRepository>("select * from ASET_KIB where ASETKEY = @ASETKEY",
-                    new { ASETKEY = asetKey });
-            return Ok(kib);
         }
     }
 }

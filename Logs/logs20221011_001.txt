@@ -1,0 +1,686 @@
+2022-10-11 12:45:20.417 +07:00 [INF] User profile is available. Using 'C:\Users\MSI_NB\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-11 12:45:20.922 +07:00 [INF] Now listening on: https://localhost:7274
+2022-10-11 12:45:20.922 +07:00 [INF] Now listening on: http://localhost:5151
+2022-10-11 12:45:20.930 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-11 12:45:20.931 +07:00 [INF] Hosting environment: Development
+2022-10-11 12:45:20.931 +07:00 [INF] Content root path: C:\laragon\www\gisAPI\
+2022-10-11 13:11:56.759 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/Auth/admin/login - -
+2022-10-11 13:11:56.909 +07:00 [INF] CORS policy execution successful.
+2022-10-11 13:11:56.928 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/Auth/admin/login - - - 204 - - 178.3520ms
+2022-10-11 13:11:56.939 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7274/api/Auth/admin/login application/json 41
+2022-10-11 13:11:56.947 +07:00 [INF] CORS policy execution successful.
+2022-10-11 13:11:57.144 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.AuthController.Login (gisAPI)'
+2022-10-11 13:11:57.222 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Command) on controller gisAPI.Controllers.AuthController (gisAPI).
+2022-10-11 13:11:58.701 +07:00 [INF] Executing OkObjectResult, writing value of type 'gisAPI.Auth.LoginDto'.
+2022-10-11 13:11:58.743 +07:00 [INF] Executed action gisAPI.Controllers.AuthController.Login (gisAPI) in 1507.575ms
+2022-10-11 13:11:58.748 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.AuthController.Login (gisAPI)'
+2022-10-11 13:11:58.752 +07:00 [INF] HTTP POST /api/Auth/admin/login responded 200 in 1611.7199 ms
+2022-10-11 13:11:58.894 +07:00 [INF] Source:[::1] Request: POST https localhost:7274/api/Auth/admin/login Responded with [200] in 1808ms
+2022-10-11 13:11:58.914 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7274/api/Auth/admin/login application/json 41 - 200 830 application/json;+charset=utf-8 1974.4978ms
+2022-10-11 13:12:29.087 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/JnsKib - -
+2022-10-11 13:12:29.092 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/DaftUnit - -
+2022-10-11 13:12:29.096 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/DaftAset - -
+2022-10-11 13:12:29.112 +07:00 [INF] CORS policy execution successful.
+2022-10-11 13:12:29.112 +07:00 [INF] CORS policy execution successful.
+2022-10-11 13:12:29.112 +07:00 [INF] CORS policy execution successful.
+2022-10-11 13:12:29.113 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI)'
+2022-10-11 13:12:29.113 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI)'
+2022-10-11 13:12:29.119 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/KibLok - -
+2022-10-11 13:12:29.119 +07:00 [INF] CORS policy execution successful.
+2022-10-11 13:12:29.121 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI)'
+2022-10-11 13:12:29.121 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI)'
+2022-10-11 13:12:29.126 +07:00 [INF] Route matched with {action = "GetAllUnits", controller = "DaftUnit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.DaftUnitRepository]]] GetAllUnits() on controller gisAPI.Controllers.DaftUnitController (gisAPI).
+2022-10-11 13:12:29.126 +07:00 [INF] Route matched with {action = "GetAllAset", controller = "DaftAset"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.DaftAsetRepository]]] GetAllAset() on controller gisAPI.Controllers.DaftAsetController (gisAPI).
+2022-10-11 13:12:29.131 +07:00 [INF] Route matched with {action = "GetAllJnsKib", controller = "JnsKib"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.JnsKibRepository]]] GetAllJnsKib() on controller gisAPI.Controllers.JnsKibController (gisAPI).
+2022-10-11 13:12:29.134 +07:00 [INF] Route matched with {action = "GetAllKibLoks", controller = "KibLok"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.KibLokRepository]]] GetAllKibLoks() on controller gisAPI.Controllers.KibLokController (gisAPI).
+2022-10-11 13:12:29.138 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/Kib - -
+2022-10-11 13:12:29.144 +07:00 [INF] CORS policy execution successful.
+2022-10-11 13:12:29.149 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.KibController.GetAllKibs (gisAPI)'
+2022-10-11 13:12:29.159 +07:00 [INF] Route matched with {action = "GetAllKibs", controller = "Kib"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.KibRepository]]] GetAllKibs() on controller gisAPI.Controllers.KibController (gisAPI).
+2022-10-11 13:12:29.197 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.KibLokRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 13:12:29.206 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.JnsKibRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 13:12:29.210 +07:00 [INF] Executed action gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI) in 78.857ms
+2022-10-11 13:12:29.210 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI)'
+2022-10-11 13:12:29.210 +07:00 [INF] HTTP GET /api/JnsKib responded 200 in 89.1573 ms
+2022-10-11 13:12:29.214 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/JnsKib   Responded with [200] in 92ms
+2022-10-11 13:12:29.215 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/JnsKib - - - 200 792 application/json;+charset=utf-8 127.4643ms
+2022-10-11 13:12:29.228 +07:00 [INF] Executed action gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI) in 93.7608ms
+2022-10-11 13:12:29.229 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI)'
+2022-10-11 13:12:29.229 +07:00 [INF] HTTP GET /api/KibLok responded 200 in 107.7796 ms
+2022-10-11 13:12:29.241 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/KibLok   Responded with [200] in 119ms
+2022-10-11 13:12:29.242 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/KibLok - - - 200 2439 application/json;+charset=utf-8 122.9024ms
+2022-10-11 13:12:29.252 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.DaftUnitRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 13:12:29.288 +07:00 [INF] Executed action gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI) in 162.2967ms
+2022-10-11 13:12:29.289 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI)'
+2022-10-11 13:12:29.289 +07:00 [INF] HTTP GET /api/DaftUnit responded 200 in 175.4478 ms
+2022-10-11 13:12:29.462 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/DaftUnit   Responded with [200] in 348ms
+2022-10-11 13:12:29.463 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/DaftUnit - - - 200 555864 application/json;+charset=utf-8 370.5000ms
+2022-10-11 13:12:29.484 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.DaftAsetRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 13:12:29.639 +07:00 [INF] Executed action gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI) in 512.7539ms
+2022-10-11 13:12:29.639 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI)'
+2022-10-11 13:12:29.639 +07:00 [INF] HTTP GET /api/DaftAset responded 200 in 526.1426 ms
+2022-10-11 13:12:30.560 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/DaftAset   Responded with [200] in 1447ms
+2022-10-11 13:12:30.561 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/DaftAset - - - 200 4546265 application/json;+charset=utf-8 1464.2707ms
+2022-10-11 13:13:43.202 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.KibRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 13:14:28.127 +07:00 [INF] Executed action gisAPI.Controllers.KibController.GetAllKibs (gisAPI) in 118895.7205ms
+2022-10-11 13:14:28.186 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.KibController.GetAllKibs (gisAPI)'
+2022-10-11 13:14:28.202 +07:00 [ERR] HTTP GET /api/Kib responded 500 in 119040.5978 ms
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-10-11 13:14:28.618 +07:00 [ERR] [500]:  Stream was too long.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+2022-10-11 13:14:29.182 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/Kib   Responded with [500] in 120029ms
+2022-10-11 13:14:29.195 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at AutoWrapper.AutoWrapperMembers.WriteFormattedResponseToHttpContextAsync(HttpContext context, Int32 httpStatusCode, String jsonString)
+   at AutoWrapper.AutoWrapperMembers.HandleExceptionAsync(HttpContext context, Exception exception)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+   at AutoWrapper.AutoWrapperMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-11 13:14:29.276 +07:00 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a closed Stream.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-11 13:14:29.298 +07:00 [ERR] Connection id "0HMLB9U00N6B9", Request id "0HMLB9U00N6B9:0000000D": An unhandled exception was thrown by the application.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at AutoWrapper.AutoWrapperMembers.WriteFormattedResponseToHttpContextAsync(HttpContext context, Int32 httpStatusCode, String jsonString)
+   at AutoWrapper.AutoWrapperMembers.HandleExceptionAsync(HttpContext context, Exception exception)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+   at AutoWrapper.AutoWrapperMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-10-11 13:14:29.332 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/Kib - - - 500 0 - 120192.5462ms
+2022-10-11 13:17:56.212 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/KibLok - -
+2022-10-11 13:17:56.212 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/Kib - -
+2022-10-11 13:17:56.212 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/DaftAset - -
+2022-10-11 13:17:56.212 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/DaftUnit - -
+2022-10-11 13:17:56.212 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/JnsKib - -
+2022-10-11 13:17:56.225 +07:00 [INF] CORS policy execution successful.
+2022-10-11 13:17:56.225 +07:00 [INF] CORS policy execution successful.
+2022-10-11 13:17:56.225 +07:00 [INF] CORS policy execution successful.
+2022-10-11 13:17:56.225 +07:00 [INF] CORS policy execution successful.
+2022-10-11 13:17:56.225 +07:00 [INF] CORS policy execution successful.
+2022-10-11 13:17:56.231 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI)'
+2022-10-11 13:17:56.231 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.KibController.GetAllKibs (gisAPI)'
+2022-10-11 13:17:56.231 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI)'
+2022-10-11 13:17:56.231 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI)'
+2022-10-11 13:17:56.231 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI)'
+2022-10-11 13:17:56.233 +07:00 [INF] Route matched with {action = "GetAllJnsKib", controller = "JnsKib"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.JnsKibRepository]]] GetAllJnsKib() on controller gisAPI.Controllers.JnsKibController (gisAPI).
+2022-10-11 13:17:56.233 +07:00 [INF] Route matched with {action = "GetAllKibs", controller = "Kib"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.KibRepository]]] GetAllKibs() on controller gisAPI.Controllers.KibController (gisAPI).
+2022-10-11 13:17:56.233 +07:00 [INF] Route matched with {action = "GetAllAset", controller = "DaftAset"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.DaftAsetRepository]]] GetAllAset() on controller gisAPI.Controllers.DaftAsetController (gisAPI).
+2022-10-11 13:17:56.233 +07:00 [INF] Route matched with {action = "GetAllUnits", controller = "DaftUnit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.DaftUnitRepository]]] GetAllUnits() on controller gisAPI.Controllers.DaftUnitController (gisAPI).
+2022-10-11 13:17:56.233 +07:00 [INF] Route matched with {action = "GetAllKibLoks", controller = "KibLok"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.KibLokRepository]]] GetAllKibLoks() on controller gisAPI.Controllers.KibLokController (gisAPI).
+2022-10-11 13:17:56.308 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.JnsKibRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 13:17:56.313 +07:00 [INF] Executed action gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI) in 79.1873ms
+2022-10-11 13:17:56.313 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI)'
+2022-10-11 13:17:56.313 +07:00 [INF] HTTP GET /api/JnsKib responded 200 in 82.1745 ms
+2022-10-11 13:17:56.321 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/JnsKib   Responded with [200] in 87ms
+2022-10-11 13:17:56.322 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/JnsKib - - - 200 792 application/json;+charset=utf-8 109.4615ms
+2022-10-11 13:17:56.343 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.KibLokRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 13:17:56.345 +07:00 [INF] Executed action gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI) in 110.9504ms
+2022-10-11 13:17:56.345 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI)'
+2022-10-11 13:17:56.345 +07:00 [INF] HTTP GET /api/KibLok responded 200 in 113.9956 ms
+2022-10-11 13:17:56.347 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/KibLok   Responded with [200] in 115ms
+2022-10-11 13:17:56.347 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/KibLok - - - 200 2439 application/json;+charset=utf-8 135.3614ms
+2022-10-11 13:17:56.363 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.DaftUnitRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 13:17:56.372 +07:00 [INF] Executed action gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI) in 138.0118ms
+2022-10-11 13:17:56.372 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI)'
+2022-10-11 13:17:56.372 +07:00 [INF] HTTP GET /api/DaftUnit responded 200 in 141.3160 ms
+2022-10-11 13:17:56.470 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/DaftUnit   Responded with [200] in 238ms
+2022-10-11 13:17:56.470 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/DaftUnit - - - 200 555864 application/json;+charset=utf-8 258.2464ms
+2022-10-11 13:17:56.492 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.DaftAsetRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 13:17:56.558 +07:00 [INF] Executed action gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI) in 324.1082ms
+2022-10-11 13:17:56.559 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI)'
+2022-10-11 13:17:56.559 +07:00 [INF] HTTP GET /api/DaftAset responded 200 in 328.1081 ms
+2022-10-11 13:17:58.812 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/DaftAset   Responded with [200] in 2580ms
+2022-10-11 13:17:58.813 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/DaftAset - - - 200 4546265 application/json;+charset=utf-8 2600.9606ms
+2022-10-11 13:19:06.774 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.KibRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 13:19:36.865 +07:00 [INF] Executed action gisAPI.Controllers.KibController.GetAllKibs (gisAPI) in 100609.3744ms
+2022-10-11 13:19:36.886 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.KibController.GetAllKibs (gisAPI)'
+2022-10-11 13:19:36.894 +07:00 [ERR] HTTP GET /api/Kib responded 500 in 100658.2897 ms
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-10-11 13:19:37.008 +07:00 [ERR] [500]:  Stream was too long.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+2022-10-11 13:19:37.044 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/Kib   Responded with [500] in 100806ms
+2022-10-11 13:19:37.056 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at AutoWrapper.AutoWrapperMembers.WriteFormattedResponseToHttpContextAsync(HttpContext context, Int32 httpStatusCode, String jsonString)
+   at AutoWrapper.AutoWrapperMembers.HandleExceptionAsync(HttpContext context, Exception exception)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+   at AutoWrapper.AutoWrapperMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-11 13:19:37.098 +07:00 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a closed Stream.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-11 13:19:37.103 +07:00 [ERR] Connection id "0HMLB9U00N6BA", Request id "0HMLB9U00N6BA:00000009": An unhandled exception was thrown by the application.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at AutoWrapper.AutoWrapperMembers.WriteFormattedResponseToHttpContextAsync(HttpContext context, Int32 httpStatusCode, String jsonString)
+   at AutoWrapper.AutoWrapperMembers.HandleExceptionAsync(HttpContext context, Exception exception)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+   at AutoWrapper.AutoWrapperMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-10-11 13:19:37.165 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/Kib - - - 500 0 - 100947.8656ms
+2022-10-11 14:33:10.095 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/KibLok - -
+2022-10-11 14:33:10.095 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/JnsKib - -
+2022-10-11 14:33:10.096 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/Kib - -
+2022-10-11 14:33:10.096 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/DaftUnit - -
+2022-10-11 14:33:10.096 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/DaftAset - -
+2022-10-11 14:33:10.107 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:33:10.107 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:33:10.107 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:33:10.107 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:33:10.107 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:33:10.113 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI)'
+2022-10-11 14:33:10.113 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI)'
+2022-10-11 14:33:10.113 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI)'
+2022-10-11 14:33:10.113 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.KibController.GetAllKibs (gisAPI)'
+2022-10-11 14:33:10.113 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI)'
+2022-10-11 14:33:10.119 +07:00 [INF] Route matched with {action = "GetAllJnsKib", controller = "JnsKib"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.JnsKibRepository]]] GetAllJnsKib() on controller gisAPI.Controllers.JnsKibController (gisAPI).
+2022-10-11 14:33:10.119 +07:00 [INF] Route matched with {action = "GetAllUnits", controller = "DaftUnit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.DaftUnitRepository]]] GetAllUnits() on controller gisAPI.Controllers.DaftUnitController (gisAPI).
+2022-10-11 14:33:10.119 +07:00 [INF] Route matched with {action = "GetAllAset", controller = "DaftAset"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.DaftAsetRepository]]] GetAllAset() on controller gisAPI.Controllers.DaftAsetController (gisAPI).
+2022-10-11 14:33:10.119 +07:00 [INF] Route matched with {action = "GetAllKibs", controller = "Kib"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.KibRepository]]] GetAllKibs() on controller gisAPI.Controllers.KibController (gisAPI).
+2022-10-11 14:33:10.119 +07:00 [INF] Route matched with {action = "GetAllKibLoks", controller = "KibLok"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.KibLokRepository]]] GetAllKibLoks() on controller gisAPI.Controllers.KibLokController (gisAPI).
+2022-10-11 14:33:10.186 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.JnsKibRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:33:10.189 +07:00 [INF] Executed action gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI) in 69.5264ms
+2022-10-11 14:33:10.190 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI)'
+2022-10-11 14:33:10.190 +07:00 [INF] HTTP GET /api/JnsKib responded 200 in 77.2004 ms
+2022-10-11 14:33:10.192 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.KibLokRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:33:10.192 +07:00 [INF] Executed action gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI) in 71.9781ms
+2022-10-11 14:33:10.192 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI)'
+2022-10-11 14:33:10.193 +07:00 [INF] HTTP GET /api/KibLok responded 200 in 80.0689 ms
+2022-10-11 14:33:10.194 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/JnsKib   Responded with [200] in 80ms
+2022-10-11 14:33:10.194 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/KibLok   Responded with [200] in 81ms
+2022-10-11 14:33:10.194 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/JnsKib - - - 200 792 application/json;+charset=utf-8 100.3898ms
+2022-10-11 14:33:10.194 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/KibLok - - - 200 2439 application/json;+charset=utf-8 100.3429ms
+2022-10-11 14:33:10.202 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.DaftUnitRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:33:10.208 +07:00 [INF] Executed action gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI) in 87.9218ms
+2022-10-11 14:33:10.208 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI)'
+2022-10-11 14:33:10.208 +07:00 [INF] HTTP GET /api/DaftUnit responded 200 in 95.7018 ms
+2022-10-11 14:33:10.279 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/DaftUnit   Responded with [200] in 166ms
+2022-10-11 14:33:10.279 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/DaftUnit - - - 200 555864 application/json;+charset=utf-8 185.1904ms
+2022-10-11 14:33:10.327 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.DaftAsetRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:33:10.390 +07:00 [INF] Executed action gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI) in 269.668ms
+2022-10-11 14:33:10.390 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI)'
+2022-10-11 14:33:10.390 +07:00 [INF] HTTP GET /api/DaftAset responded 200 in 277.6546 ms
+2022-10-11 14:33:10.949 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/DaftAset   Responded with [200] in 836ms
+2022-10-11 14:33:10.950 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/DaftAset - - - 200 4546265 application/json;+charset=utf-8 855.5889ms
+2022-10-11 14:34:21.426 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.KibRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:34:55.036 +07:00 [INF] Executed action gisAPI.Controllers.KibController.GetAllKibs (gisAPI) in 104896.9508ms
+2022-10-11 14:34:55.059 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.KibController.GetAllKibs (gisAPI)'
+2022-10-11 14:34:55.067 +07:00 [ERR] HTTP GET /api/Kib responded 500 in 104949.2159 ms
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-10-11 14:34:55.161 +07:00 [ERR] [500]:  Stream was too long.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+2022-10-11 14:34:55.205 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/Kib   Responded with [500] in 105087ms
+2022-10-11 14:34:55.217 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at AutoWrapper.AutoWrapperMembers.WriteFormattedResponseToHttpContextAsync(HttpContext context, Int32 httpStatusCode, String jsonString)
+   at AutoWrapper.AutoWrapperMembers.HandleExceptionAsync(HttpContext context, Exception exception)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+   at AutoWrapper.AutoWrapperMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-11 14:34:55.248 +07:00 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a closed Stream.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-11 14:34:55.257 +07:00 [ERR] Connection id "0HMLB9U00N6BB", Request id "0HMLB9U00N6BB:00000003": An unhandled exception was thrown by the application.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at AutoWrapper.AutoWrapperMembers.WriteFormattedResponseToHttpContextAsync(HttpContext context, Int32 httpStatusCode, String jsonString)
+   at AutoWrapper.AutoWrapperMembers.HandleExceptionAsync(HttpContext context, Exception exception)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+   at AutoWrapper.AutoWrapperMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-10-11 14:34:55.325 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/Kib - - - 500 0 - 105226.2075ms
+2022-10-11 14:36:36.425 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/Auth/admin/register - -
+2022-10-11 14:36:36.430 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:36:36.437 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/Auth/admin/register - - - 204 - - 11.7865ms
+2022-10-11 14:36:36.464 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7274/api/Auth/admin/register application/json 65
+2022-10-11 14:36:36.465 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:36:36.475 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.AuthController.Register (gisAPI)'
+2022-10-11 14:36:36.521 +07:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Command) on controller gisAPI.Controllers.AuthController (gisAPI).
+2022-10-11 14:36:36.976 +07:00 [INF] Executing OkObjectResult, writing value of type 'gisAPI.Persistence.Repositories.User'.
+2022-10-11 14:36:36.997 +07:00 [INF] Executed action gisAPI.Controllers.AuthController.Register (gisAPI) in 475.2318ms
+2022-10-11 14:36:36.997 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.AuthController.Register (gisAPI)'
+2022-10-11 14:36:36.997 +07:00 [INF] HTTP POST /api/Auth/admin/register responded 200 in 521.8353 ms
+2022-10-11 14:36:37.001 +07:00 [INF] Source:[::1] Request: POST https localhost:7274/api/Auth/admin/register Responded with [200] in 529ms
+2022-10-11 14:36:37.002 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7274/api/Auth/admin/register application/json 65 - 200 457 application/json;+charset=utf-8 537.4468ms
+2022-10-11 14:36:54.347 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/Auth/admin/login - -
+2022-10-11 14:36:54.347 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:36:54.347 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/Auth/admin/login - - - 204 - - 0.7800ms
+2022-10-11 14:36:54.354 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7274/api/Auth/admin/login application/json 46
+2022-10-11 14:36:54.354 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:36:54.354 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.AuthController.Login (gisAPI)'
+2022-10-11 14:36:54.355 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Command) on controller gisAPI.Controllers.AuthController (gisAPI).
+2022-10-11 14:36:54.377 +07:00 [INF] Executing OkObjectResult, writing value of type 'gisAPI.Auth.LoginDto'.
+2022-10-11 14:36:54.378 +07:00 [INF] Executed action gisAPI.Controllers.AuthController.Login (gisAPI) in 23.0152ms
+2022-10-11 14:36:54.378 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.AuthController.Login (gisAPI)'
+2022-10-11 14:36:54.378 +07:00 [INF] HTTP POST /api/Auth/admin/login responded 200 in 24.0106 ms
+2022-10-11 14:36:54.379 +07:00 [INF] Source:[::1] Request: POST https localhost:7274/api/Auth/admin/login Responded with [200] in 24ms
+2022-10-11 14:36:54.379 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7274/api/Auth/admin/login application/json 46 - 200 830 application/json;+charset=utf-8 25.8802ms
+2022-10-11 14:37:17.941 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/JnsKib - -
+2022-10-11 14:37:17.941 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/DaftUnit - -
+2022-10-11 14:37:17.942 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:37:17.942 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:37:17.942 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI)'
+2022-10-11 14:37:17.943 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI)'
+2022-10-11 14:37:17.943 +07:00 [INF] Route matched with {action = "GetAllJnsKib", controller = "JnsKib"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.JnsKibRepository]]] GetAllJnsKib() on controller gisAPI.Controllers.JnsKibController (gisAPI).
+2022-10-11 14:37:17.943 +07:00 [INF] Route matched with {action = "GetAllUnits", controller = "DaftUnit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.DaftUnitRepository]]] GetAllUnits() on controller gisAPI.Controllers.DaftUnitController (gisAPI).
+2022-10-11 14:37:17.947 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/KibLok - -
+2022-10-11 14:37:17.947 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/DaftAset - -
+2022-10-11 14:37:17.947 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:37:17.948 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:37:17.948 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/Kib - -
+2022-10-11 14:37:17.948 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI)'
+2022-10-11 14:37:17.948 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI)'
+2022-10-11 14:37:17.948 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:37:17.948 +07:00 [INF] Route matched with {action = "GetAllAset", controller = "DaftAset"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.DaftAsetRepository]]] GetAllAset() on controller gisAPI.Controllers.DaftAsetController (gisAPI).
+2022-10-11 14:37:17.948 +07:00 [INF] Route matched with {action = "GetAllKibLoks", controller = "KibLok"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.KibLokRepository]]] GetAllKibLoks() on controller gisAPI.Controllers.KibLokController (gisAPI).
+2022-10-11 14:37:17.948 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.KibController.GetAllKibs (gisAPI)'
+2022-10-11 14:37:17.949 +07:00 [INF] Route matched with {action = "GetAllKibs", controller = "Kib"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.KibRepository]]] GetAllKibs() on controller gisAPI.Controllers.KibController (gisAPI).
+2022-10-11 14:37:17.954 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.JnsKibRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:37:17.954 +07:00 [INF] Executed action gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI) in 10.3148ms
+2022-10-11 14:37:17.954 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI)'
+2022-10-11 14:37:17.954 +07:00 [INF] HTTP GET /api/JnsKib responded 200 in 11.9020 ms
+2022-10-11 14:37:17.955 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/JnsKib   Responded with [200] in 12ms
+2022-10-11 14:37:17.956 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/JnsKib - - - 200 792 application/json;+charset=utf-8 14.8629ms
+2022-10-11 14:37:17.958 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.KibLokRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:37:17.959 +07:00 [INF] Executed action gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI) in 10.6165ms
+2022-10-11 14:37:17.959 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI)'
+2022-10-11 14:37:17.960 +07:00 [INF] HTTP GET /api/KibLok responded 200 in 11.9938 ms
+2022-10-11 14:37:17.963 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/KibLok   Responded with [200] in 14ms
+2022-10-11 14:37:17.963 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/KibLok - - - 200 2439 application/json;+charset=utf-8 16.5722ms
+2022-10-11 14:37:17.980 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.DaftUnitRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:37:17.985 +07:00 [INF] Executed action gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI) in 41.1518ms
+2022-10-11 14:37:17.986 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI)'
+2022-10-11 14:37:17.986 +07:00 [INF] HTTP GET /api/DaftUnit responded 200 in 42.4260 ms
+2022-10-11 14:37:18.101 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.DaftAsetRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:37:18.122 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/DaftUnit   Responded with [200] in 178ms
+2022-10-11 14:37:18.122 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/DaftUnit - - - 200 555864 application/json;+charset=utf-8 180.8085ms
+2022-10-11 14:37:18.165 +07:00 [INF] Executed action gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI) in 216.7677ms
+2022-10-11 14:37:18.165 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI)'
+2022-10-11 14:37:18.165 +07:00 [INF] HTTP GET /api/DaftAset responded 200 in 217.6910 ms
+2022-10-11 14:37:20.656 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/DaftAset   Responded with [200] in 2708ms
+2022-10-11 14:37:20.657 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/DaftAset - - - 200 4546265 application/json;+charset=utf-8 2709.6503ms
+2022-10-11 14:38:31.944 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.KibRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:39:04.474 +07:00 [INF] Executed action gisAPI.Controllers.KibController.GetAllKibs (gisAPI) in 106507.4468ms
+2022-10-11 14:39:04.498 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.KibController.GetAllKibs (gisAPI)'
+2022-10-11 14:39:04.504 +07:00 [ERR] HTTP GET /api/Kib responded 500 in 106550.5331 ms
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-10-11 14:39:04.616 +07:00 [ERR] [500]:  Stream was too long.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+2022-10-11 14:39:04.675 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/Kib   Responded with [500] in 106716ms
+2022-10-11 14:39:04.689 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at AutoWrapper.AutoWrapperMembers.WriteFormattedResponseToHttpContextAsync(HttpContext context, Int32 httpStatusCode, String jsonString)
+   at AutoWrapper.AutoWrapperMembers.HandleExceptionAsync(HttpContext context, Exception exception)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+   at AutoWrapper.AutoWrapperMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-11 14:39:04.732 +07:00 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a closed Stream.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-11 14:39:04.739 +07:00 [ERR] Connection id "0HMLB9U00N6BC", Request id "0HMLB9U00N6BC:00000011": An unhandled exception was thrown by the application.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at AutoWrapper.AutoWrapperMembers.WriteFormattedResponseToHttpContextAsync(HttpContext context, Int32 httpStatusCode, String jsonString)
+   at AutoWrapper.AutoWrapperMembers.HandleExceptionAsync(HttpContext context, Exception exception)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+   at AutoWrapper.AutoWrapperMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-10-11 14:39:04.770 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/Kib - - - 500 0 - 106820.8923ms
+2022-10-11 14:43:05.852 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/DaftUnit - -
+2022-10-11 14:43:05.852 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/JnsKib - -
+2022-10-11 14:43:05.852 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/Kib - -
+2022-10-11 14:43:05.852 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/DaftAset - -
+2022-10-11 14:43:05.852 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7274/api/KibLok - -
+2022-10-11 14:43:05.870 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:43:05.870 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:43:05.870 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:43:05.870 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:43:05.870 +07:00 [INF] CORS policy execution successful.
+2022-10-11 14:43:05.881 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI)'
+2022-10-11 14:43:05.881 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI)'
+2022-10-11 14:43:05.881 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI)'
+2022-10-11 14:43:05.882 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.KibController.GetAllKibs (gisAPI)'
+2022-10-11 14:43:05.883 +07:00 [INF] Executing endpoint 'gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI)'
+2022-10-11 14:43:05.891 +07:00 [INF] Route matched with {action = "GetAllUnits", controller = "DaftUnit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.DaftUnitRepository]]] GetAllUnits() on controller gisAPI.Controllers.DaftUnitController (gisAPI).
+2022-10-11 14:43:05.891 +07:00 [INF] Route matched with {action = "GetAllKibs", controller = "Kib"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.KibRepository]]] GetAllKibs() on controller gisAPI.Controllers.KibController (gisAPI).
+2022-10-11 14:43:05.891 +07:00 [INF] Route matched with {action = "GetAllJnsKib", controller = "JnsKib"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.JnsKibRepository]]] GetAllJnsKib() on controller gisAPI.Controllers.JnsKibController (gisAPI).
+2022-10-11 14:43:05.891 +07:00 [INF] Route matched with {action = "GetAllAset", controller = "DaftAset"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.DaftAsetRepository]]] GetAllAset() on controller gisAPI.Controllers.DaftAsetController (gisAPI).
+2022-10-11 14:43:05.891 +07:00 [INF] Route matched with {action = "GetAllKibLoks", controller = "KibLok"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[gisAPI.Persistence.Repositories.KibLokRepository]]] GetAllKibLoks() on controller gisAPI.Controllers.KibLokController (gisAPI).
+2022-10-11 14:43:06.011 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.JnsKibRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:43:06.017 +07:00 [INF] Executed action gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI) in 124.7786ms
+2022-10-11 14:43:06.017 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.JnsKibController.GetAllJnsKib (gisAPI)'
+2022-10-11 14:43:06.017 +07:00 [INF] HTTP GET /api/JnsKib responded 200 in 136.3951 ms
+2022-10-11 14:43:06.024 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/JnsKib   Responded with [200] in 142ms
+2022-10-11 14:43:06.024 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/JnsKib - - - 200 792 application/json;+charset=utf-8 172.9381ms
+2022-10-11 14:43:06.049 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.KibLokRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:43:06.051 +07:00 [INF] Executed action gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI) in 158.3347ms
+2022-10-11 14:43:06.051 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.KibLokController.GetAllKibLoks (gisAPI)'
+2022-10-11 14:43:06.052 +07:00 [INF] HTTP GET /api/KibLok responded 200 in 168.9580 ms
+2022-10-11 14:43:06.055 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/KibLok   Responded with [200] in 174ms
+2022-10-11 14:43:06.055 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/KibLok - - - 200 2439 application/json;+charset=utf-8 203.9392ms
+2022-10-11 14:43:06.204 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.DaftUnitRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:43:06.214 +07:00 [INF] Executed action gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI) in 322.3101ms
+2022-10-11 14:43:06.214 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.DaftUnitController.GetAllUnits (gisAPI)'
+2022-10-11 14:43:06.214 +07:00 [INF] HTTP GET /api/DaftUnit responded 200 in 333.5491 ms
+2022-10-11 14:43:06.374 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/DaftUnit   Responded with [200] in 493ms
+2022-10-11 14:43:06.374 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/DaftUnit - - - 200 555864 application/json;+charset=utf-8 522.8391ms
+2022-10-11 14:43:06.507 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.DaftAsetRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:43:06.595 +07:00 [INF] Executed action gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI) in 702.5063ms
+2022-10-11 14:43:06.595 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.DaftAsetController.GetAllAset (gisAPI)'
+2022-10-11 14:43:06.595 +07:00 [INF] HTTP GET /api/DaftAset responded 200 in 714.2308 ms
+2022-10-11 14:43:08.153 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/DaftAset   Responded with [200] in 2272ms
+2022-10-11 14:43:08.153 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/DaftAset - - - 200 4546265 application/json;+charset=utf-8 2302.1901ms
+2022-10-11 14:45:05.834 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gisAPI.Persistence.Repositories.KibRepository, gisAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-11 14:45:44.798 +07:00 [INF] Executed action gisAPI.Controllers.KibController.GetAllKibs (gisAPI) in 158895.9713ms
+2022-10-11 14:45:44.826 +07:00 [INF] Executed endpoint 'gisAPI.Controllers.KibController.GetAllKibs (gisAPI)'
+2022-10-11 14:45:44.837 +07:00 [ERR] HTTP GET /api/Kib responded 500 in 158945.7352 ms
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-10-11 14:45:45.400 +07:00 [ERR] [500]:  Stream was too long.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+2022-10-11 14:45:45.479 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/Kib   Responded with [500] in 159586ms
+2022-10-11 14:45:45.491 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at AutoWrapper.AutoWrapperMembers.WriteFormattedResponseToHttpContextAsync(HttpContext context, Int32 httpStatusCode, String jsonString)
+   at AutoWrapper.AutoWrapperMembers.HandleExceptionAsync(HttpContext context, Exception exception)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+   at AutoWrapper.AutoWrapperMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-11 14:45:45.539 +07:00 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a closed Stream.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-11 14:45:45.543 +07:00 [ERR] Connection id "0HMLB9U00N6BD", Request id "0HMLB9U00N6BD:00000009": An unhandled exception was thrown by the application.
+System.IO.IOException: Stream was too long.
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at AutoWrapper.AutoWrapperMembers.WriteFormattedResponseToHttpContextAsync(HttpContext context, Int32 httpStatusCode, String jsonString)
+   at AutoWrapper.AutoWrapperMembers.HandleExceptionAsync(HttpContext context, Exception exception)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+   at AutoWrapper.AutoWrapperMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-10-11 14:45:45.601 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/Kib - - - 500 0 - 159745.0063ms
+2022-10-11 15:20:41.003 +07:00 [INF] Starting up

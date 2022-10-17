@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "9JIyRPBEpMOtKtrzG+UT6Q54Ju6i/fWk7dMNUbuW5u0=",
+  "Hash": "uI2ovEqckldCshPXX74WDjNIK+t4P3cj0ju8Utp2v7o=",
   "Source": "gisAPI",
   "BasePath": "_content/gisAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "gisAPI\\wwwroot",
+      "Source": "gisAPI",
+      "ContentRoot": "C:\\laragon\\www\\gisAPI\\wwwroot\\",
+      "BasePath": "_content/gisAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\laragon\\www\\gisAPI\\wwwroot\\Upload\\assets.png",
+      "SourceId": "gisAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\laragon\\www\\gisAPI\\wwwroot\\",
+      "BasePath": "_content/gisAPI",
+      "RelativePath": "Upload/assets.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\assets.png"
+    }
+  ]
 }
