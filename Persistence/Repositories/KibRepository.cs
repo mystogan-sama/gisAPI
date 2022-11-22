@@ -9,6 +9,7 @@ namespace gisAPI.Persistence.Repositories
  
         public string IDBRG { get; set; }
         public string UNITKEY { get; set; }
+        public string KDASET { get; set; }
         public string ASETKEY { get; set; }
         public string TAHUN { get; set; }
         public string NOREG { get; set; }
