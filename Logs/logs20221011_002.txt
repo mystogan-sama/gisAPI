@@ -1,8 +1,0 @@
-2022-10-11 15:20:42.338 +07:00 [INF] User profile is available. Using 'C:\Users\MSI_NB\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
-2022-10-11 15:20:42.550 +07:00 [INF] Application is shutting down...
-2022-10-11 15:20:42.735 +07:00 [INF] Now listening on: https://localhost:7274
-2022-10-11 15:20:42.735 +07:00 [INF] Now listening on: http://localhost:5151
-2022-10-11 15:20:42.735 +07:00 [INF] Application started. Press Ctrl+C to shut down.
-2022-10-11 15:20:42.736 +07:00 [INF] Hosting environment: Development
-2022-10-11 15:20:42.736 +07:00 [INF] Content root path: C:\laragon\www\gisAPI\
-2022-10-11 15:44:09.459 +07:00 [INF] Starting up

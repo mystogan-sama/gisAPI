@@ -114,6 +114,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// app.MapFallbackToController("Index", "Fallback");
+
 app.UseApiResponseAndExceptionWrapper(new AutoWrapperOptions
 {
     IsDebug = app.Environment.IsDevelopment(),

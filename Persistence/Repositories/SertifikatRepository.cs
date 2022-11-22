@@ -2,18 +2,20 @@ using System.ComponentModel.DataAnnotations;
 
 namespace gisAPI.Persistence.Repositories
 {
-    public class KibLokRepository
+    public class SertifikatRepository
     {
+        public long ID { get; set; }
         [Key]
-        public long ? ID { get; set; }
+ 
         public string IDBRG { get; set; }
         public string UNITKEY { get; set; }
         public string ASETKEY { get; set; }
-        public string KET { get; set; }
-        public string METODE { get; set; }
-        public string LOKASI { get; set; }
-        public DateTime DATECREATE { get; set; } = DateTime.Now;
         public string KDKIB { get; set; }
+        public string NOSERTIFIKAT { get; set; }
+        public DateTime TANGGAL { get; set; }
+        public string ALAMAT { get; set; }
+        public string LUAS { get; set; }
         public string URLIMG { get; set; }
+        public string KET { get; set; }
     }
 }

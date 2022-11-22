@@ -37,5 +37,22 @@ namespace gisAPI.Controllers
                     return Ok(kibDLok);
 
         }
+
+        [HttpGet("{IDBRG}/{search}")]
+        public async Task<ActionResult<DaftAsetRepository>> GetUnitKey(string search, string IDBRG)
+        {
+            using var connection = new SqlConnection(_config.GetConnectionString("Default"));
+            if (search != null)
+            {
+                var kibDLok = await connection.QueryAsync<DaftAsetRepository>("select TOP 10 b.IDBRG,b.ASETKEY,b.UNITKEY,b.KDKIB, a.NMASET,a.KDASET, a.KDASET +' - '+ a.NMASET as KDASET from DAFTASET a join  ASET_KIB b on b.ASETKEY=a.ASETKEY where a.KDASET LIKE '%'+@search+'%'",
+                    new { search = search });
+                return Ok(kibDLok);
+            }else{
+                var kibDLok = await connection.QueryAsync<DaftAsetRepository>("select * from ASET_KIB where IDBRG = @IDBRG",
+                    new { IDBRG = IDBRG  });
+            return Ok(kibDLok);
+            }
+
+        }
     }
 }
