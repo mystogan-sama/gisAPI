@@ -95,11 +95,11 @@ builder.Services.AddDistributedMemoryCache();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// if (app.Environment.IsDevelopment())
+// {
+app.UseSwagger();
+app.UseSwaggerUI();
+// }
 
 app.UseCors(c => c
        .AllowAnyMethod()
@@ -114,7 +114,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// app.MapFallbackToController("Index", "Fallback");
+app.MapFallbackToController("Index", "Fallback");
 
 app.UseApiResponseAndExceptionWrapper(new AutoWrapperOptions
 {

@@ -224,3 +224,4 @@
 2022-11-22 13:55:57.613 +07:00 [INF] HTTP GET /api/DaftAset responded 200 in 249.0066 ms
 2022-11-22 13:55:58.209 +07:00 [INF] Source:[::1] Request: GET https localhost:7274/api/DaftAset   Responded with [200] in 845ms
 2022-11-22 13:55:58.214 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7274/api/DaftAset - - - 200 4546265 application/json;+charset=utf-8 884.9909ms
+2022-11-22 14:10:20.482 +07:00 [INF] Starting up
